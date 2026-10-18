@@ -3,10 +3,10 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-dark.svg" width="100%" alt="M Abhinav: systems software engineer and open-source founder building developer tools, multi-device automation and industrial IoT software">
+  <img src="./assets/hero-dark.svg" width="100%" alt="Abhinav Musrif: systems software engineer and open-source founder building developer tools, multi-device automation and industrial IoT software">
 </picture>
 
-# M Abhinav
+# Abhinav Musrif
 **Systems software · Developer platforms · Device-native automation**
 
 Founder of **[Amretra Dynamics](https://github.com/Amretra-Dynamics)** · Building **[MegasMoves](https://github.com/Amretra-Dynamics/megasmoves)**
