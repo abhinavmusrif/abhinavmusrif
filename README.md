@@ -1,78 +1,51 @@
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-dark.svg" width="100%" alt="Abhinav Musrif: systems software engineer and open-source founder building developer tools, multi-device automation and industrial IoT software">
-</picture>
-
 # Abhinav Musrif
-**Systems software · Developer platforms · Device-native automation**
 
-Founder of **[Amretra Dynamics](https://github.com/Amretra-Dynamics)** · Building **[MegasMoves](https://github.com/Amretra-Dynamics/megasmoves)**
+**Applied AI Engineering · Agentic AI · LLM Applications · Model Context Protocol (MCP)**
 
-[**Explore MegasMoves**](https://megasmoves.io/) · [**Engineering portfolio**](https://abhinavmusrif.me/) · [**Open-source organization**](https://github.com/Amretra-Dynamics) · [**Community**](https://t.me/megasmovesSI)
+2025 B.Tech Computer Science and Engineering graduate, VIT Chennai · Hyderabad, India
 
-</div>
+[Portfolio](https://abhinavmusrif.me/) · [LinkedIn](https://www.linkedin.com/in/abhinav-musrif-0a4738432/) · [Amretra Dynamics](https://github.com/Amretra-Dynamics)
 
----
+## What I work on
 
-### Engineering beyond the application layer
+I build the software layer that connects AI agents to real applications, tools, and devices. My independent engineering work focuses on typed tool interfaces, API integration, execution state, permission boundaries, failure recovery, and observable outcomes.
 
-I design and build software where **agents, operating systems, devices, networks and real-world workflows intersect**. My focus spans C/C++ systems engineering, Python and TypeScript services, local runtimes, developer tooling, secure automation, distributed systems and industrial IoT.
+I am looking for entry-level **AI Engineer, Applied AI Engineer, Generative AI Engineer, LLM Engineer, and Agentic AI Engineer** opportunities, including paid AI engineering internships, across India or eligible remote locations.
 
-I care about the parts of a system that demos tend to skip: **reproducible behavior, explicit permissions, protocol boundaries, observability, failure recovery and code that can actually run**.
+## Selected engineering projects
 
-### Selected open-source engineering
+| Project | What it demonstrates |
+| --- | --- |
+| [Megas Moves](https://github.com/Amretra-Dynamics/megasmoves) | Cross-platform agent tooling and MCP operator architecture: scoped permissions, local execution, browser/device interfaces, state and evidence. Active engineering preview. |
+| [Megas Moves case study](https://github.com/abhinavmusrif/megas-moves-case-study) | Agent workflow coordination, worker sessions, command leasing, ordered events and verification. Architecture case study. |
+| [Software Lifecycle Env](https://github.com/abhinavmusrif/software-lifecycle-env) | Deterministic AI-agent evaluation prototype for testing, debugging and maintenance, including hidden regression checks and a FastAPI interface. |
+| [Overwatch](https://github.com/abhinavmusrif/overwatch) | Backend incident triage prototype with context inspection, risk scoring, deterministic fallback analysis and postmortems. |
 
-| Project | Engineering focus |
-| :-- | :-- |
-| **[MegasMoves ↗](https://github.com/Amretra-Dynamics/megasmoves)** | **Multi-device SI agent and automation platform** with a local execution runtime, MegasMCP, a native desktop layer, Android, and an opt-in Chrome connector. Source-available engineering preview, not a finished production release. |
-| **[Industrial Edge Controller & Digital Twin ↗](https://github.com/abhinavmusrif/industrial-edge-controller)** | **C++17 industrial gateway simulation** modeling MCU sensor acquisition, multithreaded control, Modbus TCP, MQTT, watchdogs, CRC framing, fault injection and SCADA monitoring. Software simulation, not a physical-hardware deployment. |
-| **[Overwatch ↗](https://github.com/abhinavmusrif/overwatch)** | **Backend incident triage tooling** using a watchdog, crash parsing, contextual workspace inspection, risk scoring and postmortem generation. TypeScript/Node.js prototype with a deterministic offline analysis path. |
-| **[Software Lifecycle Env ↗](https://github.com/abhinavmusrif/software-lifecycle-env)** | **Deterministic software-engineering agent benchmark** for testing, debugging and safe maintenance, with hidden regression checks, anti-shortcut validation and a FastAPI interface. Research prototype. |
+Chitraagni is another independent product-engineering project: its current core is deterministic, with structured state, APIs, code generation and external AI interoperability through Megas MCP. It does not require an LLM to operate.
 
-<details>
-<summary><b>View how my work connects: from an agent request to trusted execution</b></summary>
+## Agent-system architecture
 
 ```mermaid
 flowchart LR
-    U["Developer / user"] --> C["CLI / UI / MCP client"]
-    A["External agent"] --> C
-    C --> M["MegasMCP"]
-    M --> P["Scoped permissions"]
-    P --> R["Local runtime"]
-    R --> D["Desktop + browser + tools"]
-    R --> W["Trusted workspaces"]
-    M --> S["Authorized product services"]
+    A["AI client"] --> M["Typed MCP tools"]
+    M --> P["Scoped authorization"]
+    P --> R["Local runtime / service API"]
+    R --> T["Application or device"]
+    T --> E["Observed results"]
+    E --> A
 ```
 
-This is a conceptual view of the [MegasMoves architecture](https://github.com/Amretra-Dynamics/megasmoves), not a claim that every feature is production-ready.
+Conceptual view of the Megas Moves architecture. See the source and case study for implementation scope and limitations.
 
-</details>
+## Technical toolkit
 
-### The technical terrain
+- **Applied AI:** agent integrations, MCP, tool execution, workflow orchestration, agent evaluation prototypes.
+- **Software foundations:** Python, FastAPI, TypeScript, REST APIs, JSON, SQL, PostgreSQL, Git, Linux, Docker.
+- **Engineering practices:** typed schemas, authentication, scoped permissions, deterministic checks, observability and failure handling.
+- **Currently deepening:** RAG, embeddings, vector search, prompt/context engineering, LLM evaluation and agent orchestration frameworks.
 
-**Languages & services:** C, C++, Python, TypeScript, JavaScript, SQL, FastAPI, Node.js, REST APIs.
+Additional systems work: [Industrial Edge Controller & Digital Twin](https://github.com/abhinavmusrif/industrial-edge-controller), a software-only C++17 simulation.
 
-**Systems & platforms:** Linux, Windows, native applications, process management, networking, distributed systems, Docker, CI/CD and observability.
+I distinguish prototypes and engineering previews from released production software, and prefer source-backed evidence over unverified metrics.
 
-**Protocols & automation:** Model Context Protocol (MCP), browser automation, MQTT, Modbus TCP, device communication, permissioned tool execution and industrial-control simulation.
-
-**Engineering approach:** Local-first where it matters. Explicit trust boundaries. Deterministic testing. Reproducible builds. Evidence over inflated metrics.
-
-### Currently building
-
-- **MegasMoves:** a device-native **SI agent** platform with human-visible controls, typed MCP capabilities, browser and desktop operations, and multi-device direction.
-- **Amretra Dynamics:** an engineering ecosystem for developer infrastructure, software creation and system-level products.
-- **Systems experiments:** practical work across industrial communication, backend reliability and agent evaluation.
-
-I publish work in stages and distinguish **architecture, prototype, preview and released software**. Follow the repositories for implementation details and current status.
-
-### Connect / collaborate
-
-I'm interested in **systems and backend engineering, C/C++, embedded and industrial software, developer infrastructure, secure automation and open-source collaboration**.
-
-**[Personal website](https://abhinavmusrif.me/)** · **[GitHub projects](https://github.com/abhinavmusrif?tab=repositories)** · **[Amretra Dynamics](https://github.com/Amretra-Dynamics)** · **[MegasMoves community](https://t.me/megasmovesSI)**
-
-<sub>Built deliberately. Documented openly. Tested against the real world.</sub>
+**Open to AI engineering opportunities.** [View my portfolio](https://abhinavmusrif.me/) or [connect on LinkedIn](https://www.linkedin.com/in/abhinav-musrif-0a4738432/).
